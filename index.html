@@ -8,28 +8,223 @@
   </head>
   <body>
     <header class="navbar">
-      <div class="left">
+      <div id="left">
         <a class="nav-item github-icon" href="#"><i class="fa fa-github fa-2x"></i></a>
         <a class="nav-item" href="#">Personal</a>
         <a class="nav-item" href="#">Open source</a>
         <a class="nav-item" href="#">Buisness</a>
         <a class="nav-item" href="#">Explore</a>
       </div>
-      <div class="right">
-        <a class="nav-item" href="#">Pricing</a>
-        <a class="nav-item" href="#">Blog</a>
-        <a class="nav-item" href="#">Support</a>
+      <div id="right">
+        <a class="nav-item sub" href="#">Pricing</a>
+        <a class="nav-item sub" href="#">Blog</a>
+        <a class="nav-item sub" href="#">Support</a>
         <input type="text" name="serch" placeholder="Search Github">
-      </div>
-      <div class="right">
+
         <a class="btn" href="#">Log in</a>
         <a class="btn green" href="#">Sign up</a>
       </div>
     </header>
+    <section>
+      <div class="container">
+        <div class="col col-3">
+          <div class="info">
+            <!--Account info-->
+            <img class="avatar"
+            src="https://avatars0.githubusercontent.com/u/2410692?v=3&s=460"/>
+            <h1>Elle Kasai</h1><br>
+            <h2>ellekasai</h2>
+            <h4>I'm a UI Developer/Designer at Istuary Innovation Group, and
+              really like to keep things neat and minimal!</h4>
+          </div>
+          <div class="info">
+            <!--contact info-->
+            <ul>
+              <li>
+                <i class="fa fa-group"></i>
+                <p>Istuary Innovation Labs</p>
+              </li>
+              <li>
+                <i class="fa fa-map-marker"></i>
+                <p>Vancouver, Canada</p>
+              </li>
+              <li>
+                <i class="fa fa-envelope-o"></i>
+                <a href="#">elle.kasai@gmail.com</a>
+              </li>
+              <li>
+                <i class="fa fa-link"></i>
+                <a href="#">http://ellekasai.com</a>
+              </li>
+              <li>
+                <i class="fa fa-clock-o fa-rotate-90"></i>
+                <p>Joined on Sep 24, 2012</p>
+              </li>
+            </ul>
+          </div>
+          <div cladd="info">
+            <!--network info-->
+            <a href="#">
+              <strong>353</strong>
+              <span>Followers</span>
+            </a>
+            <a href="#">
+              <strong>112</strong>
+              <span>Followers</span>
+            </a>
+            <a href="#">
+              <strong>18</strong>
+              <span>Followers</span>
+            </a>
+          </div>
+        </div>
+        <div class="col col-9">
+          <!--table info for popular repositories-->
+          <div>
+            <div class="tab-bar">
+              <a id="right" href="#" class="btn green sm">Follow</a>
+              <div class="tabs">
+                <a class="tab active" href="#"><i class="fa fa-user"></i> Overview</a>
+                <a class="tab" href="#"><i class="fa fa-book"></i> Repositories</a>
+                <a class="tab" href="#"><i class="fa fa-rss"></i> Public activity</a>
+              </div>
+            </div>
+            <div>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Popular repositories</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <a class="trlink" href="#">
+                        <i class="fa fa-book"></i>
+                        Purplecoat.js<p id="stars">787<i class="fa fa-star"></i></p><br>
+                        <p>Simple Labeled Overlays</p>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a class="trlink" href="#">
+                        <i class="fa fa-book"></i>
+                        resumecards<p id="stars">511<i class="fa fa-star"></i></p><br>
+                        <p>A Markdown based resume generator. It loosd great on mobile/desktop and can be saved as PDF.</p>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a class="trlink" href="#">
+                        <i class="fa fa-book"></i>
+                        twemoji-awesome<p id="stars">419<i class="fa fa-star"></i></p><br>
+                        <p>Like Font Awesome, but for Twitter Emoji</p>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a class="trlink" href="#">
+                        <i class="fa fa-book"></i>
+                        shiori<p id="stars">288<i class="fa fa-star"></i></p><br>
+                        <p>A Bootstrap-based Jekyll Theme.</p>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <a class="trlink" href="#">
+                        <i class="fa fa-book"></i>
+                        shinayaka<p id="stars">18<i class="fa fa-star"></i></p><br>
+                        <p>Jekyll blog theme</p>
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div>
+            <table>
+              <thead>
+                <tr>
+                  <th> # Contribution in the last year </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <img href="./contribution.png"/>
+                  <p>Summary of pull requests, issues opened, and commits. <a href="#">Learn how we count contributions</a>.</p>
+                  <span>Less</span>
+                  <div class="commits"></div>
+                  <div class="commits"></div>
+                  <div class="commits"></div>
+                  <div class="commits"></div>
+                  <div class="commits"></div>
+                  <span>More</span>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div>
+            <h2>Contribution activity</h2>
+            <div class="select-wrapper">
+              <select>
+                <option value="0">1 day</option>
+                <option value="1">1 week</option>
+                <option value="2">1 month</option>
+                <option value="3">1 year</option>
+              </select>
+            </div>
+            <div id="center">
+              <h1>ellekasai has no activity during this period</h1>
+            </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <ul>
+        <li id="left">© 2016 GitHub, Inc.</li>
+        <li id="left">
+          <a href="#">Terms</a>
+        </li>
+        <li id="left">
+          <a href="#">Privicy</a>
+        </li>
+        <li id="left">
+          <a href="#">Secuity</a>
+        </li>
+        <li id="left">
+          <a href="#">Status</a>
+        </li>
+        <li id="left">
+          <a href="#">Help</a>
+        </li>
+        <li id="right">
+          <a href="#">Contact Github</a>
+        </li>
+        <li id="right">
+          <a href="#">API</a>
+        </li>
+        <li id="right">
+          <a href="#">Training</a>
+        </li>
+        <li class="#">
+          <a href="#">Shop</a>
+        </li>
+        <li id="right">
+          <a href="#">Blog</a>
+        </li>
+        <li id="right">
+          <a href="#">About</a>
+        </li>
+      </ul>
+      <a href="#">
+        <i class="fa fa-fa-github fa-lg"></i>
+      </a>
 
-    <h1> Header </h1>
-    <div>
-      <p> This is some text </p>
-    </div>
+    </footer>
   </body>
 </html>
