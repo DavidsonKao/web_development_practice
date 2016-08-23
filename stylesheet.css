@@ -2,13 +2,15 @@
                                 #Base
 \*---------------------------------------------------------------------------*/
 *, *:before, *:after {
-  box-sizing: border-box!important;
+  box-sizing: border-box !important;
 }
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
                Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
                "Segoe UI Symbol";
   margin: 0px;
+  color: #767676;
+  font-size: 14px;
 }
 
 header {
@@ -66,15 +68,16 @@ p {
   display: inline-block;
   margin: auto;
   font-size: 12px;
-  color: #767676;
 }
 
 div {
   display: inline-block;
+  width: auto;
 }
 
 input {
   display: inline-block;
+  float: left;
   border-radius: 2px;
   padding: 0px 2px;
 }
@@ -122,8 +125,20 @@ a:hover { text-decoration: underline; }
   color: #4078c0
 }
 
+.nav-set-main {
+  display: inline-block;
+  float: left;
+  width: auto;
+}
+
+.nav-set-sub {
+  display: inline-block;
+  float: right;
+  width: auto;
+}
+
 .nav-item {
-  position: relative;
+  display: inline-block;
   float: left;
   margin: 0px auto;
   padding: 8px 10px;
@@ -138,11 +153,14 @@ a:hover { text-decoration: underline; }
 
 .nav-item.sub {
   display: inline-block;
+  float: left;
   padding: 8px;
   font-size: 13px;
 }
 
 .search {
+  display: inline-block;
+  float: right;
   margin-left: 5px;
 }
 
@@ -151,6 +169,29 @@ a:hover { text-decoration: underline; }
   width: 230px;
   height: 230px;
   border-radius: 6px;
+}
+
+.info {
+  position: relative;
+  border-bottom: 1px solid #d5d5d5;
+  line-height: 1.5;
+}
+
+.name {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.username {
+  font-size: 20px;
+  font-weight: lighter;
+  line-height: 26px;
+  color: #666666:
+}
+
+.summary {
+  word-wrap: break-word;
 }
 
 .tab-bar {
@@ -182,6 +223,73 @@ a:hover { text-decoration: underline; }
   border-radius: 2px 2px 0px 0px;
 }
 
+.tab-view {
+  width: 100%;
+}
+
+.legend {
+  display: inline-block;
+  float: right;
+  width: inherit;
+  font-size: 12px;
+}
+.commits-0{
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #eeeeee;
+}
+
+.commits-1{
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #d6e685;
+}
+
+.commits-2{
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #8cc665;
+}
+
+.commits-3{
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #44a340;
+}
+
+.commits-4{
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #1e6823;
+}
+
+.activity {
+  display: block;
+  position: relative;
+  width: 730px;
+  height: 90px;
+  margin-top: 24px;
+  padding: 30px;
+  background-color: #fafafa;
+  border: 1px #e5e5e5;
+  text-align: center;
+}
+
+.activity h3 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.footer {
+  font-size: 11px;
+}
+
 .container {
   width: 100%;
   height: 100%;
@@ -194,7 +302,7 @@ a:hover { text-decoration: underline; }
   padding: 6px 64px 6px 30px;
 }
 
-.trlink i {
+.trlink .fa.fa-book {
   position: relative;
   margin-left: -20px;
   margin-right: 3px;
@@ -217,12 +325,8 @@ footer ul li {
 \*---------------------------------------------------------------------------*/
 
 .navbar {
-  position: relative;
-  top -10px;
-  left -10px;
-  z-index: 1;
   padding: 20px 0px;
-  min-width: : 100%;
+  background-color: #f5f5f5;
   border-bottom: 1px solid rgba(0, 0, 0, 0.075);
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
   font-size: 16px;
@@ -245,89 +349,87 @@ footer ul li {
   display: inline-block;
   padding: 20px 0px;
   width: 8.333333%;
-  font-size: 12px;
+  font-size: 14px;
  }
 .col-2 {
   display: inline-block;
   padding: 20px 0px;
   width: 16.666666%;
-  font-size: 12px;
+  font-size: 14px;
 }
 .col-3 {
   display: inline-block;
   padding: 20px 0px;
   width: 25%;
-  font-size: 12px;
+  font-size: 14px;
 }
-.col-4 {
-  display: inline-block;
-  padding: 20px 0px;
+.col-4 {right
   width: 33.333333%;
-  font-size: 12px;
+  font-size: 14px;
 }
 .col-5 {
   display: inline-block;
   padding: 20px 0px;
   width: 41.666666%;
-  font-size: 12px;
+  font-size: 14px;
 }
 .col-6 {
   display: inline-block;
   padding: 20px 0px;
   width: 50%;
-  font-size: 12px;
+  font-size: 14px;
 }
 .col-7 {
   display: inline-block;
   padding: 20px 0px;
   width: 58.333333%;
-  font-size: 12px;
+  font-size: 14px;
 }
 .col-8 {
   display: inline-block;
   padding: 20px 0px;
   width: 66.666666%;
-  font-size: 12px;
+  font-size: 14px;
 }
 .col-9 {
   display: inline-block;
+  vertical-align: top;
   padding: 20px 0px;
   width: 75%;
-  font-size: 12px;
+  font-size: 14px;
 }
 .col-10 {
   display: inline-block;
   padding: 20px 0px;
   width: 83.333333%;
-  font-size: 12px;
+  font-size: 14px;
 }
 .col-11 {
   display: inline-block;
   padding: 20px 0px;
   width: 91.666666%;
-  font-size: 12px;
+  font-size: 14px;
 }
 .col-12 {
   display: inline-block;
   padding: 20px 0px;
   width: 100%;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 #center { align-items: center; }
 
 #right {
-  position: relative;;
-  right: 0px;
+  float: right !important;
 }
 
 #left {
-  position: relative;;
-  left: 0px;
+  float: left !important;
 }
 
 .btn {
   display: inline-block;
+  float: left;
   padding: 5px;
   margin-right: 2px;
   background-color: #dddddd;
@@ -340,7 +442,8 @@ footer ul li {
 }
 
 .btn.green {
-  float: right;
+  display: inline-block;
+  float: left;
   background-color: #8add6d;
   background-image: -webkit-linear-gradient(#8add6d, #60b044);
   background-image: linear-gradient(#8add6d, #60b044);
@@ -349,6 +452,7 @@ footer ul li {
 }
 
 .btn.green.sm {
+  display: inline-block;
   float: right;
   background-color: #8add6d;
   background-image: -webkit-linear-gradient(#8add6d, #60b044);
@@ -356,4 +460,8 @@ footer ul li {
   border-color: #5ca941;
   color: #ffffff;
   font-size: 10px;
+}
+
+.input {
+
 }
