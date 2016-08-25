@@ -98,7 +98,7 @@
             </div>
           </div>
           <div class="tab-view">
-            <div>
+            <div class="table-wrapper">
               <table>
                 <thead>
                   <tr>
@@ -111,7 +111,7 @@
                       <a class="trlink" href="#">
                         <i class="fa fa-book"></i>
                         Purplecoat.js<p id="stars">787 <i class="fa fa-star"></i></p><br>
-                        <p>Simple Labeled Overlays</p>
+                        <span class="repo-description">Simple Labeled Overlays</span>
                       </a>
                     </td>
                   </tr>
@@ -120,7 +120,7 @@
                       <a class="trlink" href="#">
                         <i class="fa fa-book"></i>
                         resumecards<p id="stars">511 <i class="fa fa-star"></i></p><br>
-                        <p>A Markdown based resume generator. It loosd great on mobile/desktop and can be saved as PDF.</p>
+                        <span class="repo-description">A Markdown based resume generator. It loosd great on mobile/desktop and can be saved as PDF.</span>
                       </a>
                     </td>
                   </tr>
@@ -129,7 +129,7 @@
                       <a class="trlink" href="#">
                         <i class="fa fa-book"></i>
                         twemoji-awesome<p id="stars">419 <i class="fa fa-star"></i></p><br>
-                        <p>Like Font Awesome, but for Twitter Emoji</p>
+                        <span class="repo-description">Like Font Awesome, but for Twitter Emoji</span>
                       </a>
                     </td>
                   </tr>
@@ -138,7 +138,7 @@
                       <a class="trlink" href="#">
                         <i class="fa fa-book"></i>
                         shiori<p id="stars">288 <i class="fa fa-star"></i></p><br>
-                        <p>A Bootstrap-based Jekyll Theme.</p>
+                        <span class="repo-description">A Bootstrap-based Jekyll Theme.</span>
                       </a>
                     </td>
                   </tr>
@@ -147,14 +147,14 @@
                       <a class="trlink" href="#">
                         <i class="fa fa-book"></i>
                         shinayaka<p id="stars">18 <i class="fa fa-star"></i></p><br>
-                        <p>Jekyll blog theme</p>
+                        <span class="repo-description">Jekyll blog theme</span>
                       </a>
                     </td>
                   </tr>
                 </tbody>
               </table>
             </div>
-            <div>
+            <div class="table-wrapper">
               <table>
                 <thead>
                   <tr>
@@ -165,7 +165,7 @@
                   <tr>
                     <td>
                       <div class="foot-text" id="left">
-                        <img href="./contribution.png"/>
+                        <img src="./contribution.PNG"/>
                         <p>Summary of pull requests, issues opened, and commits. <a href="#">Learn how we count contributions</a>.</p>
                       </div>
                       <div class="legend">
@@ -182,10 +182,11 @@
                 </tbody>
               </table>
             </div>
-            <div>
+            <div class="table-wrapper">
               <h2>Contribution activity</h2>
-              <div class="select-wrapper">
-                <select>
+              <div id="right">
+                <select class="select-wrapper">
+                  Period:
                   <option value="0">1 day</option>
                   <option value="1">1 week</option>
                   <option value="2">1 month</option>

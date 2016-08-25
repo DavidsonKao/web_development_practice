@@ -127,6 +127,12 @@ i {
   text-align: center;
 }
 
+select {
+  width: inherit;
+  height: inherit;
+  text-align: right;
+}
+
 footer {
   font-size: 12px;
   line-height: 1.5;
@@ -244,7 +250,7 @@ footer {
 
 .tab-bar {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   border-bottom: 1px solid #d8d8d8;
 }
 
@@ -257,6 +263,7 @@ footer {
 .tabs .tab {
   padding: 8px 12px;
   background-color: transparent;
+  color: #767676;
 }
 
 .tab .tab:hover {
@@ -319,12 +326,13 @@ footer {
 .activity {
   display: block;
   position: relative;
-  width: 730px;
-  height: 90px;
+  width: 100%;
   margin-top: 24px;
   padding: 30px;
   background-color: #fafafa;
-  border: 1px #e5e5e5;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.05);
   text-align: center;
 }
 
@@ -344,16 +352,51 @@ footer {
   font-size: 0px;
 }
 
+.table-wrapper {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
 .trlink {
   display: block;
   position: relative;
-  padding: 6px 64px 6px 30px;
+  padding: 6px 6px 6px 30px;
+  font-weight: bold;
+}
+
+.trlink:hover {
+  text-decoration: underline;
 }
 
 .trlink .fa.fa-book {
   position: relative;
   margin-left: -20px;
   margin-right: 3px;
+  color: #767676;
+}
+
+.trlink .fa.fa-book:hover {
+  text-decoration: underline;
+}
+
+.repo-description {
+  font-size: 12px;
+  font-weight: lighter;
+  line-height: 21px;
+  color: #767676;
+}
+
+.repo-description:hover {
+  text-decoration: none;
+}
+
+.select-wrapper {
+  padding: 3px 10px;
+  border: 1px solid #767676;
+  border-radius: 3px;
+  background-color: #eeeeee;
+  background-image: -webkit-linear-gradiant(#fcfcfc, #eeeeee);
+  background-image: linear-gradient(#fcfcfc, #eeeeee);
 }
 
 .footer {
@@ -407,6 +450,8 @@ footer ul li:first {
   position: relative;
   float: right;
   margin-top: 12px;
+  font-weight: lighter;
+  color: #767676;
 }
 
 
